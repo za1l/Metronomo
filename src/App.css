@@ -1,0 +1,170 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Estilos base */
+.flamenco-app {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #2a0a0a;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(170, 30, 30, 0.3);
+}
+
+/* Selector de palos */
+.pattern-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.pattern-selector button {
+  background: #5c1a1a;
+  color: #ffd7a3;
+  border: 2px solid #8b2525;
+  font-family: "Alegreya", serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.pattern-selector button.active {
+  background: #8b2525;
+  border-color: #ffd7a3;
+}
+
+/* Grid de ritmo */
+.rhythm-grid {
+  display: grid;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.rhythm-row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.rhythm-cell {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #5c1a1a;
+  background: #361212;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.rhythm-cell.active {
+  background: #c44536;
+  border-color: #ffd7a3;
+}
+
+/* Reloj metronómico */
+.metronome-clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto;
+  border: 3px solid #8b2525;
+  border-radius: 50%;
+}
+
+.needle {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 3px;
+  height: 45%;
+  background: #ffd7a3;
+  transform-origin: bottom center;
+  transition: transform 0.1s linear;
+}
+
+.compas-marks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mark {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  width: 2px;
+  height: 15px;
+  background: #ffd7a3;
+  transform-origin: bottom center;
+}
+
+.mark.strong {
+  height: 25px;
+  background: #c44536;
+}
+
+/* Controles */
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.controls input {
+  background: #361212;
+  border: 2px solid #8b2525;
+  color: #ffd7a3;
+  padding: 0.5rem;
+  width: 80px;
+  text-align: center;
+}
+
+button {
+  background: #8b2525 !important;
+  color: #ffd7a3 !important;
+  border: none !important;
+}
+
+button:hover {
+  background: #c44536 !important;
+}
